@@ -1,0 +1,217 @@
+:root{
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #ffc06e;
+    --secondary-color: #8D8DFF;
+    --third-color: #edf4b7;
+    --color-1: #F9F6F3;
+    --color-2: #F3F7F9;
+    --color-3: #F6F3F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif !important;
+    color: var(--text-color);
+}
+
+body{
+    padding: 1em;
+    background-color: var(--base-color);
+    min-height: 100vh;
+}
+
+h1, h2, h3, ul{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+nav{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em; 
+}
+
+
+header nav li:first-child {
+    margin-right: auto; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+header, section{
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 70%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container{
+    flex: 0 1 34em;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.text-container p{
+    margin: .75em 0 1em 0;
+    font-size: 1.25em;
+}
+
+.cta-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.secondary{
+    background-color: var(--secondary-color);
+}
+
+section{
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+section p{
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+h6{
+    margin-top: 10px;
+}
+
+/* ---------About Styles--------- */
+
+body .about-section{
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: left;
+}
+
+/* ---------Contact Me Styles--------- */
+
+.contact-body p{
+    margin-top: 25px;
+    font-size: 2rem;
+}
+
+/* ---------Footer List Styles--------- */
+ footer nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: var(--third-color);
+    margin: 1em auto;
+    width: min(75em, 100%);
+    height: 3em !important;
+    padding: 0;
+    border-radius: 1em;
+ }
+
+ .footer-format{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fill-to-bottom{    /*makes the body container fill up the screen*/
+    flex:1
+}
+/*-----------Sign In Styles-----------*/
+
+.sign-in-header .cta-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #cdc7c7;
+    padding: .25em .75em;
+    border-radius: .5em;
+    font-weight: 400 bold;
+}
+
+.sign-in-header h6 .cta-button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    border-radius: .5em;
+}
+
+.sign-in-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*---------Cookie Styles-------*/
+ .cookie-list{
+    text-align: left;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+/*----------Portfolio Styles---------*/
+.portfolio-img {
+    max-width: 100%;
+    border-radius: 0%;
+    object-fit: cover;
+    object-position: bottom;
+}
